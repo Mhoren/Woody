@@ -33,14 +33,15 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777; }
+  color: #fff; }
 
 .header {
   text-transform: capitalize;
   letter-spacing: .2rem;
   font-size: 1.3rem;
-  font-weight: 700;
-  color: #fff; }
+  font-weight: 700; }
+  .header__navbar-list li:hover a {
+    color: #fff; }
 
 .header {
   height: 100vh;
