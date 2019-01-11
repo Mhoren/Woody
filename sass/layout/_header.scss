@@ -1,0 +1,49 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.2), 
+        rgba($color-primary-dark, 0.2)), 
+    url(../img/test3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &__navbar {
+        width: 100%;
+        background-color: rgb(36, 44, 46);
+        position: fixed;
+    }
+    &__navbar-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+    &__navbar-list li {
+        list-style: none;
+        display: inline-block;
+        width: calc(100%/7);
+        text-align: center;
+        position: relative;
+    }
+    & .navIcon {
+        height: 3rem;
+        width: auto;
+    }
+    & .underline {
+        padding-top: 1.5rem;  
+        padding-bottom: 1.5rem;
+    }
+    & .underline:hover {
+        box-shadow: 0 6px 0 -4px #fff;
+    }
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        animation: light 3s ease-out infinite;
+    }
+}

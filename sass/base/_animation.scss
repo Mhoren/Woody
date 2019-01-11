@@ -1,0 +1,14 @@
+@keyframes light {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+        color: rgb(217, 224, 108);
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
