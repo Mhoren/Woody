@@ -12,8 +12,22 @@ body {
     font-size: 1.3rem;
     font-weight: 700;
     &__navbar-list li:hover a {
-        color: #fff;
+        color: $color-grey-light;
         animation: letter 0.5s ease-in forwards;
+    }
+}
+
+.products {
+    color: $color-grey-extradark;
+    & h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 4rem;
+    }
+    & p {
+        letter-spacing: 2px;
+        font-size: 1rem; 
     }
 }
 

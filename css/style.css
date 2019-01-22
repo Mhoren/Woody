@@ -45,8 +45,19 @@ body {
   font-size: 1.3rem;
   font-weight: 700; }
   .header__navbar-list li:hover a {
-    color: #fff;
+    color: #ebebeb;
     animation: letter 0.5s ease-in forwards; }
+
+.products {
+  color: #242c2e; }
+  .products h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 4rem; }
+  .products p {
+    letter-spacing: 2px;
+    font-size: 1rem; }
 
 .products {
   position: relative; }
@@ -65,6 +76,7 @@ body {
       flex-direction: column;
       overflow: hidden; }
     .products__box1-text {
+      padding: 10%;
       flex: 0 1 50%; }
     .products__box1-grid {
       display: flex;
@@ -77,8 +89,8 @@ body {
   overflow: hidden; }
   .img-white img {
     display: block;
-    height: 50vh;
-    opacity: .6; }
+    width: 100%;
+    opacity: 1; }
 
 .img-dark {
   background-color: #242c2e;
@@ -86,8 +98,8 @@ body {
   overflow: hidden; }
   .img-dark img {
     display: block;
-    height: 50vh;
-    opacity: .6; }
+    width: 100%;
+    opacity: 1; }
 
 .header {
   height: 100vh;
@@ -119,7 +131,7 @@ body {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
   .header .underline:hover {
-    box-shadow: 0 6px 0 -4px #fff; }
+    box-shadow: 0 6px 0 -4px #ebebeb; }
   .header__logo {
     position: absolute;
     top: 50%;

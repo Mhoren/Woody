@@ -16,6 +16,7 @@
             overflow: hidden;
         }
         &-text {
+            padding: 10%;
             flex: 0 1 50%;
         }
         &-grid {
@@ -32,8 +33,8 @@
     overflow: hidden;
     & img {
         display: block;
-        height: 50vh;
-        opacity: .6;
+        width: 100%;
+        opacity: 1;
     }
 }
 .img-dark {
@@ -42,7 +43,9 @@
     overflow: hidden;
     & img {
         display: block;
-        height: 50vh;
-        opacity: .6;
+        width: 100%;
+        opacity: 1;
     }
 }
+
+
