@@ -1,0 +1,48 @@
+.products {
+    position: relative;
+    &__box1 {
+        background-color: $color-grey-light;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        &-img {
+            flex: 0 1 50%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        &-text {
+            flex: 0 1 50%;
+        }
+        &-grid {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+}
+
+.img-white {
+    background-color: $color-grey-light;
+    flex: 0 1 50%;
+    overflow: hidden;
+    & img {
+        display: block;
+        height: 50vh;
+        opacity: .6;
+    }
+}
+.img-dark {
+    background-color: $color-grey-extradark;
+    flex: 0 1 50%;
+    overflow: hidden;
+    & img {
+        display: block;
+        height: 50vh;
+        opacity: .6;
+    }
+}

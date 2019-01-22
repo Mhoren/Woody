@@ -13,6 +13,7 @@ body {
     font-weight: 700;
     &__navbar-list li:hover a {
         color: #fff;
+        animation: letter 0.5s ease-in forwards;
     }
 }
 

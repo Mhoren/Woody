@@ -11,3 +11,9 @@
         opacity: 0.4;
     }
 }
+
+@keyframes letter {
+    100% {
+        letter-spacing: 3px;
+    }
+}
