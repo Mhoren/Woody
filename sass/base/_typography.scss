@@ -31,3 +31,31 @@ body {
     }
 }
 
+.idea {
+    color: $color-grey-extradark;
+    & h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 4rem;
+    }
+    & p {
+        letter-spacing: 2px;
+        font-size: 1rem; 
+    }
+}
+
+.about {
+    color: $color-grey-extradark;
+    & h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 4rem;
+    }
+    & p {
+        letter-spacing: 2px;
+        font-size: 1rem; 
+    }
+}
+
