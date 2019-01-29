@@ -3,13 +3,25 @@
     background-color: $color-grey-light;
 }
 
+.idea {
+    background-color: $color-white;
+}
+
+.about {
+    background-color: $color-grey-light;
+}
+
+.form {
+    background-color: $color-white;
+}
+
 .box {
     display: flex;
     justify-content: center;
     flex-direction: row;
     text-align: center;
     align-items: center;
-    height: 95vh;
+    //height: 95vh;
     overflow: hidden;
     &__text {
         padding: 10%;
@@ -47,3 +59,69 @@
         }
     }
 }
+
+.form {
+    & h1 {
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+    }
+    &__btn {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 20rem;
+        background-color: $color-grey-extradark;
+        color: $color-white;
+        padding: 2rem 2rem;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 6rem;
+        & i {
+            padding-left: 1rem;
+        }
+        &:hover {
+        opacity: .9;
+        }
+    }
+}
+
+.input {
+    margin: 4rem 20rem;
+    display: flex;
+    &__container {
+        display: flex;
+        width: 100%;
+        &-distance {
+            margin-left: 4rem;
+        }
+    }
+    &__field {
+        flex: 1;
+        outline: none;
+        padding-left: 1rem;
+        &:focus {
+            border: 2px solid $color-grey-extradark; 
+        }
+    }
+    &__field-full {
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        height: 10rem;
+        flex: 1;
+        outline: none;
+        &:focus {
+            border: 2px solid $color-grey-extradark; 
+        }
+    }
+    &__icon {
+        background: $color-grey-extradark;
+        color: $color-white;
+        min-width: 5rem;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+
+

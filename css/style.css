@@ -81,6 +81,10 @@ body {
     letter-spacing: 2px;
     font-size: 1rem; }
 
+.form {
+  color: #242c2e;
+  text-transform: uppercase; }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(85, 193, 197, 0.2), rgba(78, 95, 94, 0.2)), url(../img/test3.jpg);
@@ -124,13 +128,21 @@ body {
   position: relative;
   background-color: #ebebeb; }
 
+.idea {
+  background-color: #fff; }
+
+.about {
+  background-color: #ebebeb; }
+
+.form {
+  background-color: #fff; }
+
 .box {
   display: flex;
   justify-content: center;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  height: 95vh;
   overflow: hidden; }
   .box__text {
     padding: 10%;
@@ -159,3 +171,53 @@ body {
       .box__img-big img {
         width: 100%;
         display: block; }
+
+.form h1 {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 8rem; }
+
+.form__btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 20rem;
+  background-color: #242c2e;
+  color: #fff;
+  padding: 2rem 2rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 6rem; }
+  .form__btn i {
+    padding-left: 1rem; }
+  .form__btn:hover {
+    opacity: .9; }
+
+.input {
+  margin: 4rem 20rem;
+  display: flex; }
+  .input__container {
+    display: flex;
+    width: 100%; }
+    .input__container-distance {
+      margin-left: 4rem; }
+  .input__field {
+    flex: 1;
+    outline: none;
+    padding-left: 1rem; }
+    .input__field:focus {
+      border: 2px solid #242c2e; }
+  .input__field-full {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    height: 10rem;
+    flex: 1;
+    outline: none; }
+    .input__field-full:focus {
+      border: 2px solid #242c2e; }
+  .input__icon {
+    background: #242c2e;
+    color: #fff;
+    min-width: 5rem;
+    text-align: center;
+    padding: 2rem; }
