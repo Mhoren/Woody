@@ -1,6 +1,6 @@
 .products {
     position: relative;
-    background-color: $color-grey-light;
+    background-color: $color-white;
 }
 
 .idea {
@@ -13,6 +13,12 @@
 
 .form {
     background-color: $color-white;
+    margin-top: 6rem;
+    margin-bottom: 14rem;
+}
+
+.footer {
+    background-color: $color-grey-extradark;
 }
 
 .box {
@@ -24,11 +30,20 @@
     //height: 95vh;
     overflow: hidden;
     &__text {
-        padding: 10%;
+        padding: 20% 10% 10% 10%;
         flex: 0 1 50%;
+        position: relative;
+        & img {
+            display: block;
+            position: absolute;
+            top: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25rem;
+        }
     }
     &__img {
-        flex: 0 1 50%;
+        flex: 1;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -36,9 +51,25 @@
         &-white {
             width: 50%;
             overflow: hidden;
+            position: relative;
+            & h2 {
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                transition: all ease-in-out 0.4s;
+            }
+            &:hover h2 {
+                opacity: 1;
+            }
             & img {
                 width: 100%;
                 display: block;
+                transition: all ease-in-out 0.4s;
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
         &-dark {
@@ -47,6 +78,10 @@
             & img {
                 width: 100%;
                 display: block;
+                transition: all ease-in-out 0.4s;
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
         &-big {
@@ -63,7 +98,6 @@
 .form {
     & h1 {
         text-align: center;
-        margin-top: 6rem;
         margin-bottom: 8rem;
     }
     &__btn {
@@ -76,7 +110,6 @@
         padding: 2rem 2rem;
         border: none;
         cursor: pointer;
-        margin-bottom: 6rem;
         & i {
             padding-left: 1rem;
         }
@@ -122,6 +155,37 @@
         padding: 2rem;
     }
 }
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4rem 20rem;
+    position: relative;
+    &__address {
+        flex: 0 1 25%;
+        margin-right: 5rem;
+    }
+    &__media {
+        flex: 0 1 30%;
+        & div {
+            align-items: center;
+            display: flex;
+            & i {
+                background: $color-grey-extradark;
+                color: $color-white;
+                text-align: center;
+                padding: 1rem 2rem 1rem 0;
+            }
+        }
+    }
+    &__logo {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        height: 8rem;
+    }
+}
+
 
 
 

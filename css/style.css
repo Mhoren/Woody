@@ -46,7 +46,7 @@ body {
   font-weight: 700; }
   .header__navbar-list li:hover a {
     color: #ebebeb;
-    animation: letter 0.5s ease-in forwards; }
+    animation: letter 0.3s ease-in forwards; }
 
 .products {
   color: #242c2e; }
@@ -54,7 +54,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 4rem; }
+    font-size: 3rem; }
   .products p {
     letter-spacing: 2px;
     font-size: 1rem; }
@@ -85,9 +85,19 @@ body {
   color: #242c2e;
   text-transform: uppercase; }
 
+.contact__address {
+  letter-spacing: 1px;
+  line-height: 2; }
+
+.contact__media {
+  letter-spacing: 1px;
+  line-height: 1.7; }
+  .contact__media i {
+    font-size: 2.5rem; }
+
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 193, 197, 0.2), rgba(78, 95, 94, 0.2)), url(../img/test3.jpg);
+  background-image: linear-gradient(to top, rgba(235, 235, 235, 0.2), rgba(36, 44, 46, 0.2)), url(../img/test3.jpg);
   background-position: center;
   background-size: cover;
   position: relative; }
@@ -106,8 +116,7 @@ body {
     list-style: none;
     display: inline-block;
     width: calc(100%/7);
-    text-align: center;
-    position: relative; }
+    text-align: center; }
   .header .navIcon {
     height: 3rem;
     width: auto; }
@@ -115,7 +124,7 @@ body {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
   .header .underline:hover {
-    box-shadow: 0 6px 0 -4px #ebebeb; }
+    box-shadow: 0 6px 0 -4px #fff; }
   .header__logo {
     position: absolute;
     top: 50%;
@@ -126,7 +135,7 @@ body {
 
 .products {
   position: relative;
-  background-color: #ebebeb; }
+  background-color: #fff; }
 
 .idea {
   background-color: #fff; }
@@ -135,7 +144,12 @@ body {
   background-color: #ebebeb; }
 
 .form {
-  background-color: #fff; }
+  background-color: #fff;
+  margin-top: 6rem;
+  margin-bottom: 14rem; }
+
+.footer {
+  background-color: #242c2e; }
 
 .box {
   display: flex;
@@ -145,26 +159,50 @@ body {
   align-items: center;
   overflow: hidden; }
   .box__text {
-    padding: 10%;
-    flex: 0 1 50%; }
-  .box__img {
+    padding: 20% 10% 10% 10%;
     flex: 0 1 50%;
+    position: relative; }
+    .box__text img {
+      display: block;
+      position: absolute;
+      top: 2%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 25rem; }
+  .box__img {
+    flex: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden; }
     .box__img-white {
       width: 50%;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
+      .box__img-white h2 {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        transition: all ease-in-out 0.4s; }
+      .box__img-white:hover h2 {
+        opacity: 1; }
       .box__img-white img {
         width: 100%;
-        display: block; }
+        display: block;
+        transition: all ease-in-out 0.4s; }
+        .box__img-white img:hover {
+          transform: scale(1.05); }
     .box__img-dark {
       width: 50%;
       overflow: hidden; }
       .box__img-dark img {
         width: 100%;
-        display: block; }
+        display: block;
+        transition: all ease-in-out 0.4s; }
+        .box__img-dark img:hover {
+          transform: scale(1.05); }
     .box__img-big {
       width: 100%;
       overflow: hidden; }
@@ -174,7 +212,6 @@ body {
 
 .form h1 {
   text-align: center;
-  margin-top: 6rem;
   margin-bottom: 8rem; }
 
 .form__btn {
@@ -186,8 +223,7 @@ body {
   color: #fff;
   padding: 2rem 2rem;
   border: none;
-  cursor: pointer;
-  margin-bottom: 6rem; }
+  cursor: pointer; }
   .form__btn i {
     padding-left: 1rem; }
   .form__btn:hover {
@@ -221,3 +257,27 @@ body {
     min-width: 5rem;
     text-align: center;
     padding: 2rem; }
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4rem 20rem;
+  position: relative; }
+  .contact__address {
+    flex: 0 1 25%;
+    margin-right: 5rem; }
+  .contact__media {
+    flex: 0 1 30%; }
+    .contact__media div {
+      align-items: center;
+      display: flex; }
+      .contact__media div i {
+        background: #242c2e;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 2rem 1rem 0; }
+  .contact__logo {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    height: 8rem; }

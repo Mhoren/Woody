@@ -1,9 +1,9 @@
 .header {
     height: 100vh;
     background-image: linear-gradient(
-        to right bottom, 
-        rgba($color-primary-light, 0.2), 
-        rgba($color-primary-dark, 0.2)), 
+        to top, 
+        rgba($color-grey-light, 0.2), 
+        rgba($color-grey-extradark, 0.2)), 
     url(../img/test3.jpg);
     background-position: center;
     background-size: cover;
@@ -26,7 +26,6 @@
         display: inline-block;
         width: calc(100%/7);
         text-align: center;
-        position: relative;
     }
     & .navIcon {
         height: 3rem;
@@ -37,7 +36,7 @@
         padding-bottom: 1.5rem;
     }
     & .underline:hover {
-        box-shadow: 0 6px 0 -4px $color-grey-light;
+        box-shadow: 0 6px 0 -4px $color-white;
     }
     &__logo {
         position: absolute;
