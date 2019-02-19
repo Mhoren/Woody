@@ -4,7 +4,7 @@
         to top, 
         rgba($color-grey-light, 0.2), 
         rgba($color-grey-extradark, 0.2)), 
-    url(../img/test3.jpg);
+    url(../img/background1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -41,9 +41,16 @@
     &__logo {
         position: absolute;
         top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
-        animation: light 3s ease-out infinite;
+        right: 10%;
+        text-align: left;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: flex-start;
+        & img {
+            animation: light 4s ease-out infinite;
+        }
+        & h1 {
+            padding-left: 2rem;
+        }
     }
 }

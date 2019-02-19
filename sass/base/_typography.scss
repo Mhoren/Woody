@@ -11,6 +11,16 @@ body {
     letter-spacing: .2rem;
     font-size: 1.3rem;
     font-weight: 700;
+    &__logo h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        & span {
+            font-size: 1rem;
+            display: block;
+            position: absolute;
+            top: 85%;
+        }
+    }
     &__navbar-list li:hover a {
         color: $color-grey-light;
         animation: letter 0.3s ease-in forwards;

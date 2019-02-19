@@ -22,11 +22,11 @@ a:active {
 
 @keyframes light {
   0% {
-    opacity: 0.4; }
+    opacity: 0.3; }
   50% {
-    opacity: 1; }
+    opacity: .8; }
   100% {
-    opacity: 0.4; } }
+    opacity: 0.3; } }
 
 @keyframes letter {
   100% {
@@ -44,6 +44,14 @@ body {
   letter-spacing: .2rem;
   font-size: 1.3rem;
   font-weight: 700; }
+  .header__logo h1 {
+    font-size: 3.5rem;
+    line-height: 1.1; }
+    .header__logo h1 span {
+      font-size: 1rem;
+      display: block;
+      position: absolute;
+      top: 85%; }
   .header__navbar-list li:hover a {
     color: #ebebeb;
     animation: letter 0.3s ease-in forwards; }
@@ -97,7 +105,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to top, rgba(235, 235, 235, 0.2), rgba(36, 44, 46, 0.2)), url(../img/test3.jpg);
+  background-image: linear-gradient(to top, rgba(235, 235, 235, 0.2), rgba(36, 44, 46, 0.2)), url(../img/background1.jpg);
   background-position: center;
   background-size: cover;
   position: relative; }
@@ -128,10 +136,15 @@ body {
   .header__logo {
     position: absolute;
     top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    animation: light 3s ease-out infinite; }
+    right: 10%;
+    text-align: left;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: flex-start; }
+    .header__logo img {
+      animation: light 4s ease-out infinite; }
+    .header__logo h1 {
+      padding-left: 2rem; }
 
 .products {
   position: relative;
@@ -185,24 +198,28 @@ body {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        transition: all ease-in-out 0.4s; }
+        transition: all ease-in-out 0.8s; }
       .box__img-white:hover h2 {
         opacity: 1; }
       .box__img-white img {
         width: 100%;
         display: block;
-        transition: all ease-in-out 0.4s; }
+        transition: all ease-in-out 0.8s;
+        filter: grayscale(1); }
         .box__img-white img:hover {
-          transform: scale(1.05); }
+          transform: scale(1.1);
+          filter: grayscale(0); }
     .box__img-dark {
       width: 50%;
       overflow: hidden; }
       .box__img-dark img {
         width: 100%;
         display: block;
-        transition: all ease-in-out 0.4s; }
+        transition: all ease-in-out 0.8s;
+        filter: grayscale(1); }
         .box__img-dark img:hover {
-          transform: scale(1.05); }
+          transform: scale(1.1);
+          filter: grayscale(0); }
     .box__img-big {
       width: 100%;
       overflow: hidden; }

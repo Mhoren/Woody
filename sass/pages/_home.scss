@@ -58,7 +58,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);
-                transition: all ease-in-out 0.4s;
+                transition: all ease-in-out 0.8s;
             }
             &:hover h2 {
                 opacity: 1;
@@ -66,9 +66,11 @@
             & img {
                 width: 100%;
                 display: block;
-                transition: all ease-in-out 0.4s;
+                transition: all ease-in-out 0.8s;
+                filter: grayscale(1);
                 &:hover {
-                    transform: scale(1.05);
+                    transform: scale(1.1);
+                    filter: grayscale(0);
                 }
             }
         }
@@ -78,9 +80,11 @@
             & img {
                 width: 100%;
                 display: block;
-                transition: all ease-in-out 0.4s;
+                transition: all ease-in-out 0.8s;
+                filter: grayscale(1);
                 &:hover {
-                    transform: scale(1.05);
+                    transform: scale(1.1);
+                    filter: grayscale(0);
                 }
             }
         }
